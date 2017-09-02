@@ -1,0 +1,7 @@
+MyIntent hello
+WhatsUpIntent what is up
+AMAZON.HelpIntent help me
+AMAZON.StopIntent stop now
+AMAZON.CancelIntent cancel it
+
+MyNameIsIntent my name is {firstname}
