@@ -1,0 +1,6 @@
+MyNameIsIntent My name is { firstname }
+HelloIntent Hello
+GoodbyeIntent Bye bye
+AMAZON.HelpIntent Help me
+AMAZON.StopIntent Stop now
+AMAZON.CancelIntent Cancel it
