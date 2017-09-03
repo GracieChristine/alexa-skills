@@ -1,4 +1,4 @@
-MyNameIsIntent My name is { firstname }
+MyNameIsIntent My name is {firstname}
 HelloIntent Hello
 GoodbyeIntent Bye bye
 AMAZON.HelpIntent Help me

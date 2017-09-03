@@ -9,7 +9,7 @@ exports.handler = function(event, context, callback) {
 
 let handlers = {
   'LaunchRequest': function() {
-    this.emit('UserNameIntent');
+    this.emit('MyNameIsIntent');
     this.emit('HelloIntent');
     this.emit('GoodbyeIntent');
 
@@ -20,10 +20,10 @@ let handlers = {
 
 
   // My name is {firstname}
-  'UserNameIntent': function() {
+  'MyNameIsIntent': function() {
     let myName = this.event.request.intent.slots.firstname.value;
     this.attributes['name'] = myName;
-    this.emit(':tell', `Nice to meet you, ${myName}.`);
+    this.emit(':tell', `Hi ${myName}, I'm Alexa. Nice meeting you.`);
   },
 
   // Hello
@@ -32,7 +32,7 @@ let handlers = {
     if (this.attributes['name']) {
       myName = this.attributes['name'];
     }
-    this.emit(':tell', `Hello , ${myName}, hope you have a great day.`);
+    this.emit(':tell', `Hello ${myName}, hope you have a great day.`);
   },
 
   // Goodbye
@@ -41,7 +41,7 @@ let handlers = {
     if (this.attributes['name']) {
       myName = this.attributes['name'];
     }
-    this.emit(':tell', `Tatty bye , ${myName}.`);
+    this.emit(':tell', `Farewell, ${myName}, We will meet again.`);
   },
 
   // Help / Help me
